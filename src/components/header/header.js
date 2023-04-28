@@ -30,7 +30,11 @@ const Header = () => {
       </li> } */}
 
       <Link to={"/Search"}> Stock </Link> 
+
+      <Link to={"/ThemeAddingPage"}>Theme</Link>  
       
+      <Link to={"/Comparision"}>Comparision</Link>
+
       { <Link to={"/CreatePortfolio"}><li className='button'>
               Create Portfolio
       </li></Link> }

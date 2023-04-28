@@ -4,9 +4,6 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import { Button, Form } from 'react-bootstrap';
 
-
-
-
 const currencies = ['INR', 'USD'];
 
 const themes = ['Aggressive', 'Conservative', 'Moderate'];
@@ -15,12 +12,7 @@ const reblanceFrequencys = ['Daily', 'Monthly', 'Quarterly'];
 
 const exchanges = ['NSE', 'Nasdaq'];
 
-
-
-
 function PortfolioForm() {
-
-
 
     const [portfolioName, setPortfolioName] = useState('');
 
@@ -39,23 +31,13 @@ function PortfolioForm() {
 
     const [exchange, setExchange] = useState('NSE');
 
-
-
-
-
     function handleSave(event) {
 
         event.preventDefault();
 
         console.log('submitting form');
 
-
-
-
         fetch('http://localhost:8087/project/portfolioManagement/addportfolio', {
-
-
-
 
             method: 'POST',
 
@@ -71,16 +53,7 @@ function PortfolioForm() {
 
             .catch(error => console.error(error));
 
-
-
-
-
-
-
-
     }
-
-
 
     function handleReset() {
 
@@ -98,13 +71,7 @@ function PortfolioForm() {
 
         setInitialInvestment('');
 
-
-
-
     }
-
-
-
 
     function handleCancel() {
 
@@ -112,11 +79,7 @@ function PortfolioForm() {
 
     }
 
-
-
-
     return (
-
         <div>
             <Header />
             <br />
@@ -171,9 +134,6 @@ function PortfolioForm() {
 
                         </Form.Group>
 
-
-
-
                         <Form.Group controlId="benchmark" className='col'>
 
                             <Form.Label>Benchmark</Form.Label>
@@ -218,8 +178,6 @@ function PortfolioForm() {
                     
 
                 </Form.Group> */}
-
-
                     <div className='row'>
 
                         <Form.Group controlId="theme" className='col'>
@@ -313,5 +271,3 @@ function PortfolioForm() {
 }
 
 export default PortfolioForm;
-
-

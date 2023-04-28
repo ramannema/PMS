@@ -39,7 +39,11 @@ const Home = () => {
         <a href="/search">Stock</a>
       </li>} */}
 
-      <Link to={"/search"}> Stock </Link>      
+      <Link to={"/search"}> Stock </Link>    
+
+      <Link to={"/ThemeAddingPage"}>Theme</Link>  
+
+      <Link to={"/Comparision"}>Comparision</Link>
       
       <Link to={"/CreatePortfolio"}><li className='button'>
               Create Portfolio

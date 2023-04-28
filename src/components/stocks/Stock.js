@@ -134,7 +134,7 @@ onChange={this.handleInputChange}
 <td>{data.securitiesCountry}</td>
 <td>{data.securitiesSeries}</td>
 <td>{data.securitiesId}</td>
-<td>{data.price}</td>
+<td>{data.last}</td>
 <td>
 <Button variant="primary" onClick={() => this.handleEdit(data)}>Edit</Button> </td>
 {/* <td>
